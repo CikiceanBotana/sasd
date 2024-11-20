@@ -1,0 +1,63 @@
+/* Splash Page Styles */
+.splash-page {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.splash-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.splash-video {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.splash-button {
+    position: absolute;
+    top: 45%; /* Changed from bottom: 10% to top: 55% to position it slightly below center */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.splash-button.visible {
+    opacity: 1;
+}
+
+.splash-button.hidden {
+    opacity: 0;
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #AD6F3B;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+}
+
+.enter-button:hover {
+    color: #612968;
+    transform: scale(1.05);
+    background-color: #c17f44;
+}
